@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Buku Tamu PEMKOT DENPASAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo2.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <!-- ===== Navbar ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <img src="img/logo2.png" alt="Logo Pemkot Denpasar" />
+                    <span>PEMKOT DENPASAR</span>
+                </div>
+                <ul class="navbar-links">
+                    <li><a href="#beranda">Form</a></li>
+                    <li><a href="data-tamu.html">Data Tamu</a></li>
+        </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== Form Buku Tamu ===== -->
+    <div id="beranda" class="container">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Pemkot Denpasar" />
+            <h1>PEMERINTAH KOTA DENPASAR</h1>
+            <p>Silahkan isi data anda.</p>
+        </div>
+
+        <main>
+            <form  id="form-tamu" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nama"></i> Nama</label>
+                    <input type="text" id="nama" name="nama" placeholder="Nama" autocomplete="off" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required>
+                </div>
+
+                  <div class="form-group">
+                    <label for="tanggal">Tanggal</label>
+                    <input type="date" id="tanggal" name="tanggal" autocomplete="off" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan/Kesan</label>
+                    <input type="text" id="pesan" name="pesan" placeholder="Pesan/Kesan" autocomplete="off" required>
+                </div>
+
+                <section class="emoji-section">
+                    <h2>Pilih salah satu emoji</h2>
+                    <div class="emoji">
+                        <label>
+                            <input type="radio" name="emoji" value="veryhappy" required >
+                            <img src="img/veryhappy.png" alt="Sangat Senang" >
+                        </label>
+                        <label>
+                            <input type="radio" name="emoji" value="happy" >
+                            <img src="img/happy.png" alt="Senang" >
+                        </label>
+                        <label>
+                            <input type="radio" name="emoji" value="decent" >
+                            <img src="img/decent.png" alt="Biasaja" >
+                        </label>
+                        <label>
+                            <input type="radio" name="emoji" value="meh" >
+                            <img src="img/verybad.png" alt="Kurang Senang" >
+                        </label>
+                        <label>
+                            <input type="radio" name="emoji" value="nothappy" >
+                            <img src="img/nothappy.png" alt="Tidak Senang" >
+                        </label>
+                    </div>
+                </section>
+
+                <button type="submit" class="kirim">Kirim</button>
+            </form>
+        </main>
+
+        <div class="keterangan">
+            <a href="data-tamu.html">Lihat Rekapan Data Tamu</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

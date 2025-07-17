@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu PEMKOT DENPASAR</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/logo2.png" type="image/x-icon" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+      <!-- ===== Navbar ===== -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-logo">
+                    <img src="img/logo2.png" alt="Logo Pemkot Denpasar" />
+                    <span>PEMKOT DENPASAR</span>
+                </div>
+                <ul class="navbar-links">
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="data-tamu.html">Data Tamu</a></li>
+        </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!--PEMBUKA-->
+    <div class="pembuka-teks" id="pembuka">
+  <h1>BERIKUT DATA-DATA TAMU</h1>
+  <p>Terima kasih telah berkunjung dan memberikan kesan serta masukan untuk Pemerintah Kota Denpasar. Berikut adalah rekap data dari para pengunjung.</p>
+  <a href="#tabel-tamu" class="btn-scroll">Lihat Data Tamu</a>
+</div>
+
+    <!-- ===== Persentase KONTEN ===== -->
+    <div class="polling-section">
+        <h2>Persentase Kepuasan Pengunjung</h2>
+        <div id="grafik-polling"></div>
+        <div class="to-beranda">
+            <h3>Belum mengisi buku tamu?, <span>silalahkan klik dibawah ini! </span></h3>
+            <a href="form.html">Isi Form Tamu</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+     <!--Tabel Data Tamu-->
+  <div class="table-section" id="tabel-tamu">
+  <table class="table-tamu">
+    <thead>
+      <tr>
+        <th>Perasaan</th>
+        <th>Nama</th>
+        <th>Email</th>
+        <th>Tanggal</th>
+        <th>Pesan/Kesan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="img/veryhappy.png" alt="Sangat Senang" class="emoji-img"></td>
+        <td>Wahdion</td>
+        <td>wahdion@email.com</td>
+        <td>10/07/2025</td>
+        <td>YUHUUU</td>
+      </tr>
+
+      <tr>
+        <td><img src="img/happy.png" alt="Senang" class="emoji-img"></td>
+        <td>Putri</td>
+        <td>putri@mail.com</td>
+        <td>11/07/2025</td>
+        <td>Sangat puas dengan pelayanan!</td>
+      </tr>
+
+       <tr>
+        <td><img src="img/veryhappy.png" alt="Sangat senang" class="emoji-img"></td>
+        <td>Wayan</td>
+        <td>Wayan@mail.com</td>
+        <td>12/07/2025</td>
+        <td>SENANGGG!</td>
+      </tr>
+    </tbody>
+  </table>
+
+ 
+</div>
+
+
+</body>
+</html>
